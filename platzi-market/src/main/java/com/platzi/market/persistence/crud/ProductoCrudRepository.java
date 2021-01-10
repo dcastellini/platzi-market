@@ -12,7 +12,7 @@ public interface ProductoCrudRepository extends CrudRepository <Producto, Intege
     //@Query(value = "SELECT * FROM productos WHERE id_categoria = ? ", nativeQuery = true)
     //List<Producto> findByIdcategoria(int idCategoria);
 
-    List<Producto> findByIdcategoriaOrderByNombreAsc(int idCategoria);
+    List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
     Optional<List<Producto>> findByCantidadStockLessThanAndEstado(int cantidadStock, boolean estado);
 
 
